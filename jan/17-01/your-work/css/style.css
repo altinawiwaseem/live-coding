@@ -1,12 +1,12 @@
 body {
   background-color: white;
 }
-h1,
+/* h1,
 h2,
 h3,
 nav ul li a {
   color: red;
-}
+} */
 section div {
   width: 3rem;
   height: 3rem;
@@ -21,4 +21,11 @@ section div {
 }
 #orange {
   background-color: orange;
+}
+h1 {
+  background-color: gray;
+  color: #ccc;
+  font-family: "lobster", "Neonderthaw", "cursive";
+  font-size: 2rem;
+  font-weight: bold;
 }
