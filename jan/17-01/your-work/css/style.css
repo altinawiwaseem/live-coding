@@ -1,0 +1,24 @@
+body {
+  background-color: white;
+}
+h1,
+h2,
+h3,
+nav ul li a {
+  color: red;
+}
+section div {
+  width: 3rem;
+  height: 3rem;
+  border: 3px black solid;
+  border-radius: 50%;
+}
+#red {
+  background-color: red;
+}
+#green {
+  background-color: green;
+}
+#orange {
+  background-color: orange;
+}

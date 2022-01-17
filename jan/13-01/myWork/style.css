@@ -1,0 +1,21 @@
+div p {
+  background-color: brown;
+}
+ul li {
+  background-color: burlywood;
+}
+nav ul li {
+  background-color: gray;
+}
+ol strong {
+  background-color: black;
+}
+strong {
+  background-color: yellow;
+}
+.dark{
+    background-color: black;
+}
+.light {
+    color: orange;
+}
