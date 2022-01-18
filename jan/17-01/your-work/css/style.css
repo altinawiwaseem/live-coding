@@ -82,11 +82,11 @@ main img {
 #tri {
   width: 0;
   height: 0;
-  background-color: black;
-  border-top: 6rem solid gray;
-  border-right: 6rem solid yellow;
+
+  border-top: 6rem none gray;
+  border-right: 6rem solid transparent;
   border-bottom: 6rem solid red;
-  border-left: 6rem solid blue;
+  /* border-left: 6rem solid transparent; */
 }
 #squ {
   background-color: green;
@@ -101,4 +101,10 @@ h2 {
   word-spacing: 50px;
   text-indent: 100px;
   background-color: blue;
+}
+.box {
+  background-color: lightblue;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 20% 5% 20% 5%;
 }
