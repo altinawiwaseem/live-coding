@@ -1,0 +1,90 @@
+k/* 
+things you might want to pay more attention to:
+  z-index: 99; Not good idea!!
+  Alway have index.html on the root directory
+  More DRY css files
+  If you are using Mac you need .gitignore for .DB_Store
+  SORT files and directories
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* CSS selectors */
+
+/* Element selector */
+html {
+  background-color: gray;
+}
+
+/* #ID selector */
+#cool {
+  color: blue;
+}
+/* .class selector */
+.box {
+  width: 3rem;
+  height: 3rem;
+  background-color: orange;
+}
+
+/* element,element Selector
+    element AND element 
+    */
+p, span/* , #cool, .box */ {
+  background-color: #ff7200git;
+}
+/* element element Selector
+    aka element inside element 
+    */
+p i {
+  font-size: 3rem;
+}
+header li {
+  background-color: black;
+  color: blanchedalmond;
+}
+/* element>element	 Selector  
+    element parent element 
+    */
+div > p {
+  background-color: aqua;
+}
+/* element+element  Selector
+    element immediately after element */
+
+/* element1~element2 Selector 
+    element preceded element */
+
+/* [attribute] Selector */
+
+/* [attribute=value] Selector  */
+
+/* [attribute~=value] Selector
+    containing the value */
+
+/* [attribute^=value] Selector
+    begins with the value */
+
+/* [attribute$=value] Selector
+    value ends with  */
+
+/* [attribute*=value] Selector
+    contains the substring */
+
+/* pseudo class  */
+/* specifies a special state for that element */
+/* :hover */
+
+/* :visited */
+
+/* :focus */
+
+/* :active */
+
+/* :checked */
+
+/* :nth-child() */
