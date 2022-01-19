@@ -35,7 +35,7 @@ html {
     element AND element 
     */
 p, span/* , #cool, .box */ {
-  background-color: #ff7200git;
+  background-color: #ff7200;
 }
 /* element element Selector
     aka element inside element 
@@ -55,13 +55,25 @@ div > p {
 }
 /* element+element  Selector
     element immediately after element */
+div + p {
+  color: yellow;
+}
 
 /* element1~element2 Selector 
     element preceded element */
+p ~ span {
+  background-color: redq;
+}
 
 /* [attribute] Selector */
+[id] {
+  background-color: red;
+}
 
 /* [attribute=value] Selector  */
+[type="submit"] {
+  border: none;
+}
 
 /* [attribute~=value] Selector
     containing the value */
@@ -74,6 +86,9 @@ div > p {
 
 /* [attribute*=value] Selector
     contains the substring */
+    [class*="long"] {
+border: 2px black dashed;
+    }
 
 /* pseudo class  */
 /* specifies a special state for that element */
