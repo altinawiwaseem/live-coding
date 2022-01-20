@@ -4,10 +4,19 @@
   box-sizing: border-box;
 }
 :root {
+  --my-color: green;
+  --my-font-size: 3rem;
+  --other-color: brown;
+  --header-font-face: "lucida sans" Geneva, verdana, sans-serif;
+  --box-width: 3rem;
+  --img-height: 44rem;
 }
-/* body {
-    background-color: red;
-  } */
+body {
+  color: var(--my-color);
+}
+h1 {
+  border: 2px var(--my-color) solid;
+}
 /* pseudo elements VS  pseudo classes */
 
 /* pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). */
@@ -21,7 +30,12 @@
 /*   
     :before css2 and ::before is css3
   */
-
+h1::after{
+content:"" ;
+}
+h1::before{
+  content: icon;
+}
 /* ::placeholder  */
 
 /* ::first-letter (:first-letter) */
