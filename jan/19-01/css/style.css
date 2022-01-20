@@ -12,12 +12,16 @@ things you might want to pay more attention to:
   margin: 0;
   padding: 0;
 }
+:root {
+  font-size: 16px;
+}
 
 /* CSS selectors */
 
 /* Element selector */
 html {
-  background-color: gray;
+  background-color: orange;
+  font-size: 4rem;
 }
 
 /* #ID selector */
@@ -28,14 +32,14 @@ html {
 .box {
   width: 3rem;
   height: 3rem;
-  background-color: orange;
+  background-color: gray;
 }
-
 /* element,element Selector
     element AND element 
     */
-p, span/* , #cool, .box */ {
-  background-color: #ff7200;
+p,
+span {
+  background-color: yellow;
 }
 /* element element Selector
     aka element inside element 
@@ -45,7 +49,7 @@ p i {
 }
 header li {
   background-color: black;
-  color: blanchedalmond;
+  color: wheat;
 }
 /* element>element	 Selector  
     element parent element 
@@ -56,50 +60,83 @@ div > p {
 /* element+element  Selector
     element immediately after element */
 div + p {
-  color: yellow;
+  color: brown;
 }
-
 /* element1~element2 Selector 
     element preceded element */
 p ~ span {
-  background-color: redq;
+  font-size: 10rem;
+  background-color: darkcyan;
 }
-
 /* [attribute] Selector */
 [id] {
-  background-color: red;
+  background-color: brown;
 }
-
 /* [attribute=value] Selector  */
 [type="submit"] {
   border: none;
+  background-color: black;
+  color: aliceblue;
 }
 
 /* [attribute~=value] Selector
     containing the value */
+[alt~="tree"] {
+  width: 12rem;
+}
 
 /* [attribute^=value] Selector
     begins with the value */
-
+[title^="Here"] {
+  border: 2px red dashed;
+}
 /* [attribute$=value] Selector
     value ends with  */
-
+[title$="data"] {
+  background-color: black;
+}
 /* [attribute*=value] Selector
     contains the substring */
-    [class*="long"] {
-border: 2px black dashed;
-    }
+/* [class*="long"] {
+  border: 2px black dashed;
+} */
 
+[title*="long"] {
+  border: 5px black solid;
+}
 /* pseudo class  */
 /* specifies a special state for that element */
 /* :hover */
-
+table:hover {
+  background-color: grey;
+}
 /* :visited */
+a,
+a:visited,
+a:link {
+  color: green;
+}
 
 /* :focus */
+input[type="text"]:focus {
+  outline: none;
+  border: 2px pink solid;
+}
 
 /* :active */
+a:active {
+  background-color: red;
+}
 
 /* :checked */
 
+[type="checkbox"]:checked {
+  width: 3rem;
+}
 /* :nth-child() */
+/* tr:nth-child(1) {
+  background-color: black;
+} */
+tr:nth-child(3n + 2) {
+  background-color: black;
+}
