@@ -4,18 +4,12 @@
   box-sizing: border-box;
 }
 :root {
-  --my-color: green;
+  /* hey I have something for you */
+  --my-color: orange;
+  --back-color: ;
   --my-font-size: 3rem;
-  --other-color: brown;
-  --header-font-face: "lucida sans" Geneva, verdana, sans-serif;
-  --box-width: 3rem;
-  --img-height: 44rem;
-}
-body {
-  color: var(--my-color);
-}
-h1 {
-  border: 2px var(--my-color) solid;
+  --other-color: rgba(222, 33, 5, 0.5);
+  --header-font-family: "Lucida Sans" Geneva, Verdana, sans-serif;
 }
 /* pseudo elements VS  pseudo classes */
 
