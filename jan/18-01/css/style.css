@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 html {
   font-size: 16px;
 }
@@ -90,14 +93,30 @@ th {
   width: 1rem;
   border-spacing: 33px;
 }
+<<<<<<< HEAD
+=======
 /* About page */
 /* 
 with no parent
+>>>>>>> 29a5e16eaadc517804e8169fa1a822e6dce458e0
 .box {
   border: 3px black solid;
   width: 5rem;
   height: 5rem;
   background-color: orange;
+<<<<<<< HEAD
+  position: relative;
+  /* display: inline-block; */
+  /* top: 100px;
+    left: 100px; */
+}
+.one {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  top: 100px;
+  left: 100px;
+=======
   display: inline-block;
 }
 .one {
@@ -120,5 +139,6 @@ with no parent
   left: 0;
   width: 2rem;
   height: 2rem;
+>>>>>>> 29a5e16eaadc517804e8169fa1a822e6dce458e0
   background-color: gray;
 }

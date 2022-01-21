@@ -1,0 +1,24 @@
+table {
+  border: 1px black solid;
+  float: ;
+}
+.black {
+  background-color: black;
+  border: black solid;
+  width: 5rem;
+  height: 5rem;
+}
+.white {
+  width: 5rem;
+  height: 5rem;
+}
+
+.white1 {
+  width: 5rem;
+  height: 5rem;
+}
+.black1 {
+  width: 5rem;
+  height: 5rem;
+  background-color: black;
+}

@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* body {
+  background-color: white;
+  background-image: url(../images/SOV.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+/* h1,
+h2,
+h3,
+nav ul li a {
+  color: red;
+} */
+header nav {
+  background-color: rgba(0, 0, 0, 0, 766);
+  position: fixed;
+}
+nav ul li {
+  height: 3rem;
+  display: inline;
+  margin-left: 3rem;
+}
+h1 {
+  background-color: gray;
+  color: #ccc;
+  font-family: "lobster", "Neonderthaw", "cursive";
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+section div {
+  width: 3rem;
+  height: 3rem;
+  border: 3px black solid;
+  border-radius: 50%;
+}
+/*DRY 
+don't repeat yourself */
+#red {
+  background-color: red;
+}
+#green {
+  background-color: green;
+}
+#orange {
+  background-color: orange;
+}
+/* home main */
+.something {
+  width: 10rem;
+  height: 20rem;
+  background-color: deepskyblue;
+  margin: 20rem 5rem 5rem 2rem;
+  /* border: 12px red solid; */
+  border-width: 10px 22px 30px 10px;
+  border-color: blue red black green;
+  border-style: solid dashed dotted groove;
+}
+/* about main */
+main img {
+  width: 150px;
+  height: 150px;
+  border-top: 50px black solid;
+}
+.shapes div {
+  width: 9rem;
+  height: 9rem;
+  display: inline-block;
+  border: 2px black solid;
+  margin-left: 3rem;
+}
+
+#rec {
+  background-color: blue;
+  height: 15rem;
+}
+#tri {
+  width: 0;
+  height: 0;
+
+  border-top: 6rem none gray;
+  border-right: 6rem solid transparent;
+  border-bottom: 6rem solid red;
+  /* border-left: 6rem solid transparent; */
+}
+#squ {
+  background-color: green;
+}
+
+#cir {
+  border-radius: 50%;
+  background-color: orange;
+}
+h2 {
+  color: black;
+  word-spacing: 50px;
+  text-indent: 100px;
+  background-color: blue;
+}
+.box {
+  background-color: lightblue;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 20% 5% 20% 5%;
+}
