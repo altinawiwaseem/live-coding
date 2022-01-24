@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/Facebook-logo-.png" />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.0.0-beta3-web/css/all.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>form</title>
+  </head>
+  <body>
+    <form action="index.js" method="get">
+      <fieldset>
+        <legend>Personal info</legend>
+        <input type="text" name="fName" id="1" placeholder="first name" />
+        <input type="text" name="lName" id="2" placeholder="last name" />
+        <input
+          type="email"
+          name="email"
+          id="3"
+          placeholder="your email"
+          required
+        />
+      </fieldset>
+      <fieldset>
+        <legend>Fav things</legend>
+        <input type="color" name="color" id="4" />
+        <input type="time" name="time" id="5" />
+        <input type="date" name="date" id="6" />
+        <input type="file" name="file" id="7" />
+        <input type="password" name="password" id="8" placeholder="password" />
+        <input
+          type="number"
+          name="number"
+          id="9"
+          required
+          placeholder="number"
+          min="1"
+          max="100"
+        />
+        <select name="season" id="10" required>
+          <option value="summer">Summer</option>
+          <option value="winter">Winter</option>
+          <option value="autum">Autum</option>
+          <option value="spring">Spring</option>
+        </select>
+        <section class="toggle" id="11">
+          <label class="toggle-lable">want more info?</label>
+          <label class="switch">
+            <input type="checkbox" name="agree" id="" />
+            <span class="slider"></span>
+          </label>
+        </section>
+      </fieldset>
+      <input type="submit" value="send" />
+      <input type="reset" value="clear" />
+    </form>
+
+    <i class="fas fa-home"></i>
+    <i class="fab fa-facebook-messenger"></i>
+    <span>&#64;</span>
+    &#167; &#x2604;&#x261D;
+  </body>
+</html>

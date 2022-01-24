@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url(./color.css);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Lobster", cursive;
+  width: 100vw;
+  height: 100vh;
+}
+i {
+  font-size: 3rem;
+  color: orange;
+  box-shadow: 10px 2px 20px gray;
+  border-radius: 50%;
+}
+body {
+  background-color: var(--orange-is-my-fav);
+}
+form {
+  margin: 25% auto;
+  width: 50%;
+  height: 50%;
+}
+fieldset {
+  border-radius: 2%;
+}
+fieldset input,
+select {
+  margin: 2vh auto;
+  display: block;
+  width: 40%;
+  background-color: transparent;
+  border-radius: 2%;
+  border: none;
+  border-bottom: 2px gray solid;
+  font-family: "Lobster", cursive;
+}
+fieldset input:focus,
+select:focus {
+  outline: none;
+  border-bottom: 2px orange solid;
+}
+.toggle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.switch input{
+opacity: 0; 
+    width: 0;
+    height: 0;
+}
+.switch{
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+    border: 2px red dashed;
+    margin-left: 1rem;
+
+}
+.slider{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border:2px orange solid ;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 50%;
+    transition: .2s;
+}
