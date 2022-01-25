@@ -20,10 +20,21 @@ i {
 body {
   background-color: var(--orange-is-my-fav);
 }
+
 form {
-  margin: 25% auto;
-  width: 50%;
+  margin: 6% 5% 50% 70%;
+  width: 25%;
   height: 50%;
+}
+input[type="submit"], input[type="reset"]{
+    margin: 2vh 0 0 6rem;
+    border: none;
+    border-bottom: 1px solid orange;
+    
+}
+input[type="submit"]:hover, input[type="reset"]:hover{
+    background-color: orange;
+    transition: ,3s;
 }
 fieldset {
   border-radius: 2%;
@@ -44,33 +55,48 @@ select:focus {
   outline: none;
   border-bottom: 2px orange solid;
 }
-.toggle{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.switch input{
-opacity: 0; 
-    width: 0;
-    height: 0;
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
-.switch{
-    position: relative;
-    width: 4rem;
-    height: 4rem;
-    border: 2px red dashed;
-    margin-left: 1rem;
-
+.switch {
+  position: relative;
+  width: 4rem;
+  height: 2rem;
+  /*  border: 2px red dashed; */
+  margin-left: 1rem;
 }
-.slider{
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    border:2px orange solid ;
-    cursor: pointer;
-    background-color: #ccc;
-    border-radius: 50%;
-    transition: .2s;
+.slider {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  /* border: 2px orange solid; */
+  cursor: pointer;
+  background-color: #ccc;
+  border-radius: 5rem;
+  transition: 0.2s;
+}
+.slider::before {
+  position: absolute;
+  content: "";
+  border-radius: 100%;
+  left: 0.25rem;
+  bottom: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  background-color: white;
+}
+input:checked + .slider {
+  background-color: orange;
+}
+input:checked + .slider::before {
+  transform: translatex(2.5rem);
 }
