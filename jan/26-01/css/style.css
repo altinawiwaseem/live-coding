@@ -1,3 +1,32 @@
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+  /* shorthand */
+  flex-flow: row wrap;
+  align-items: center;
+  width: 40rem;
+  height: 30rem;
+  border: 2px black solid;
+}
+.child {
+  width: 5rem;
+  height: 8rem;
+  color: white;
+  margin-left: 1rem;
+  border: 2px black solid;
+}
+.green {
+  background-color: lightgreen;
+}
+.red {
+  background-color: lightcoral;
+}
+.black {
+  background-color: black;
+}
+
 /* special effects */
 /*  order : sets the order to lay out an item in a flex */
 
