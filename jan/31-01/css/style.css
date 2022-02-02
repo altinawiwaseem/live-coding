@@ -34,6 +34,8 @@ div {
 .item-c {
   grid-area: about;
   background-color: rgb(160, 160, 211);
+  place-items: 20rem;
+  
 }
 .item-d {
   grid-area: footer;
