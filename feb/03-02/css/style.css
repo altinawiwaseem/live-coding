@@ -3,24 +3,41 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* body{
-  background-color: orange;
-} */
-/* when you print the page it will change the color to the one that you choose */
-@media print {
-  body{
-    background-color: aquamarine;
-  }
+
+body {
+  /* background-color: orange; */
 }
-/* I'll delete all our previous videos */
+/* more selectors */
 
 /* print */
+@media print {
+  body {
+    background-color: pink;
+  }
+  .text {
+    color: blue;
+  }
+  /* any other element to style when printing */
+}
 
 /* screen */
-@media only screen and (max-width:1000px){
-  body{
-    background-color: rgb(122, 126, 126);
+@media only screen and (max-width: 500px) {
+  body {
+    background-color: black;
   }
+  .text {
+  }
+  h1 {
+  }
+}
+@media only screen and (min-width: 1500px) and (max-width: 2000px) {
+  body {
+    background-color: aqua;
+    color: peru;
+  }
+}
+
+@media only screen and (orientation: landscape) {
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -44,34 +61,35 @@
 }
 
 /* hamburger menu */
-.hamburger{
+.hamburger {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   width: 3rem;
   height: 3rem;
-  border: 1px black dashed;
+  border: 2px red dashed;
 }
-.hamburger div{
+.hamburger div {
   width: 2.5rem;
   background-color: black;
-  border: 2px black solid;
   border-radius: 10%;
-  
+  border: 2px black solid;
 }
-a{
+a {
+  color: white;
   text-decoration: none;
-  
 }
-.side-menu{
+.side-menu {
   display: none;
 }
-.hamburger:hover + .side-menu{
+/* just for you :) */
+/* .hamburger:hover + .side-menu {
   display: block;
-  position:absolute;
-  top:6vh;
-  background-color: black;
+  position: absolute;
+  top: 6%;
   left: 0;
+  background-color: black;
+  color: white;
   z-index: 1;
-}
+} */
