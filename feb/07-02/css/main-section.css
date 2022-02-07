@@ -8,6 +8,15 @@
   grid-area: products;
   background-color: rgba(238, 91, 91, 0.809);
   height: 100%;
+  display: grid;
+  padding: 5%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.products-container article {
+  background-color: white;
+  padding: 3%;
+  margin: 5%;
 }
 .clients-container {
   grid-area: clients;
