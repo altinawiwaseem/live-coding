@@ -1,7 +1,7 @@
 /* main-section */
 .intro-container {
   grid-area: intro;
-  background-color: rgba(76, 76, 232, 0.912);
+  background-color: rgb(76, 76, 232);
   height: 100%;
 }
 .products-container {
@@ -12,7 +12,6 @@
   padding: 5%;
   grid-template-columns: repeat(2, 1fr);
   /* grid-template-rows: repeat(2, 1fr); */
-  
 }
 .products-container article {
   background-color: white;
