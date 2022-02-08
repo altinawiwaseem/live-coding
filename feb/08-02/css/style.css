@@ -7,26 +7,36 @@
   /* some var */
   --the-best-color: orange;
 }
-.box{
+.box {
   width: 3rem;
   height: 2rem;
   background-color: var(--the-best-color);
-  /* step No.1 */
+  /* step num 1 ani name */
   animation-name: move;
-  /* step No.2 */
-  animation-duration: 4s;
+  /* step num 2 ani for how long*/
+  animation-duration: 2s;
 }
-/* step 3 your keyframes should be align with the animation name */
-@keyframes move{
-/* from{}
-to{} */
-1%{
-width: 4rem;
+/* step 3 your keyframes */
+@keyframes move {
+  0% {
+    width: 4rem;
+  }
+  50% {
+    width: 10rem;
+    background-color: aqua;
+  }
+  100% {
+    width: 50rem;
+    background-color: black;
+  }
 }
-50%{
-width: 10rem;
-}
-100%{
-width: 100rem;
-}
-}
+/* 
+from {
+    width: 3rem;
+  }
+  to {
+    width: 15rem;
+  }
+  
+
+*/
