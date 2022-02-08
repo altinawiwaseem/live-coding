@@ -7,3 +7,26 @@
   /* some var */
   --the-best-color: orange;
 }
+.box{
+  width: 3rem;
+  height: 2rem;
+  background-color: var(--the-best-color);
+  /* step No.1 */
+  animation-name: move;
+  /* step No.2 */
+  animation-duration: 4s;
+}
+/* step 3 your keyframes should be align with the animation name */
+@keyframes move{
+/* from{}
+to{} */
+1%{
+width: 4rem;
+}
+50%{
+width: 10rem;
+}
+100%{
+width: 100rem;
+}
+}
