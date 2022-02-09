@@ -1,61 +1,62 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-:root{
-    --company-styled-font:"heebo", sans-serif;
-
+:root {
+  /* var */
+  --company-styled-font: "Heebo", sans-serif;
 }
-body{
-    font-family: var(--company-styled-font);
+body {
+  font-family: var(--company-styled-font);
 }
-/* menu */
-nav{
-    width: 20vw;
-    height: 30vh;
-    background-color: rgba(0, 0, 0, 0.459);
-    padding: 2vw;
-    border-radius: 2px;
-    transition: .2s ease-in;
-    /* step 1 */
-animation-name: dropdown-menu-move;
-/* step 2 */
-animation-duration: .5s;
+/* Menu */
+nav {
+  width: 20vw;
+  height: 30vh;
+  display: none;
+  /* border: 2px red dashed; */
+  background-color: rgba(0, 0, 0, 0.755);
+  border-radius: 2px;
+  padding: 2vh 2vw;
+  transition: 0.4s ease-in;
+  /* step 1 */
+  animation-name: dropdown-menu-move;
+  /* step 2 */
+  animation-duration: 1s;
 }
-@keyframes dropdown-menu-move{
-0%{
+@keyframes dropdown-menu-move {
+  0% {
     height: 0;
-}
-100%{
+  }
+  100% {
     height: 30vh;
+  }
 }
-
+/* animation-name: go-up-menu-move; */
+/* a styles */
+ul {
+  list-style: none;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
 }
-/* animation-name:go-up-menu-move */
-/* a style */
-a{
-    text-decoration: none;
+nav ul li {
+  width: 100%;
+  border-radius: 2px;
 }
-ul{
-    list-style: none;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
+nav ul li a {
+  color: whitesmoke;
+  text-decoration: none;
 }
-nav ul li{
-    color: whitesmoke;
-    text-decoration: none;
-    border-radius: 2px;
+ul li:hover {
+  background-color: whitesmoke;
 }
-ul li:hover{
-    background-color: whitesmoke;
-    color: rgba(0, 0, 0, 0.459);
-}
-ul li:hover > a{
-    color: rgba(0, 0, 0, 0.486);
+ul li:hover > a {
+  color: rgba(0, 0, 0, 0.755);
 }
