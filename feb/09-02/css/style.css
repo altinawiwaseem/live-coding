@@ -22,7 +22,7 @@ nav {
   padding: 2vh 2vw;
   transition: 0.1s ease-in;
   /* step 1 */
-  animation-name: dropdown-menu-move;
+  /* animation-name: dropdown-menu-move; */
   /* step 2 */
   animation-duration: 1s;
 }
