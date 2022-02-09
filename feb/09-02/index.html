@@ -23,13 +23,17 @@
       </ul>
     </nav>
     <script>
+      // will happen one tine only
       menuBox.style.display = "none";
+      //  will be called any time you click on the btn
       const showMenu = () => {
-        /* console.log("Hi"); */
         if (menuBox.style.display == "none") {
+          menuBox.style.animationName = "dropdown-menu-move";
           menuBox.style.display = "block";
         } else {
-          menuBox.style.display = "none";
+          menuBox.style.animationName = "go-up-menu-move";
+
+          setTimeout(() => (menuBox.style.display = "none"), 300);
         }
       };
     </script>
