@@ -19,16 +19,20 @@ body {
 }
 @media only screen and (min-width: 600) {
   body {
-    /* font-size: 2.5rem; */
     grid-template-rows: 15vh repeat(4, 75vh);
+  }
+  header nav .menu {
+    width: 10vw;
+    justify-content: flex-end;
   }
 }
 @media only screen and (min-width: 900) {
   body {
-    font-size: 1rem;
     grid-template-rows: 15vh repeat(4, 65vh);
   }
-  .menu {
-    font-size: 1rem;
+
+  header nav .menu {
+    width: 10vw;
+    justify-content: flex-end;
   }
 }
