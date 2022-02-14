@@ -17,10 +17,8 @@ body {
     "card"
     "footer";
 }
-
   header nav .menu {
-    width: 10vw;
-    justify-content: flex-end;
+    display: none;
   }
 
   header nav .menu {
