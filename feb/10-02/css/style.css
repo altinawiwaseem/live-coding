@@ -26,16 +26,14 @@ body {
     justify-content: flex-end;
   }
 
+
 @media only screen and (min-width: 600px) {
   body {
     grid-template-rows: 8vh repeat(4, 75vh);
     color: pink;
     font-size: 1.1rem;
       }
-      /* header nav .logo{
-        margin-top: 0;
-        align-self: center;
-      } */
+      
    }
   @media only screen and (min-width: 900px) {
     body {
@@ -51,3 +49,9 @@ body {
     }
     
   }
+
+  input:focus { 
+    outline: none ;
+    border-color: red;
+    
+ }
