@@ -1,0 +1,14 @@
+@mixin box-size{
+    width: 3rem;
+    height: 3rem;
+}
+@mixin box-size-with-random-val($width, $height){
+    width: $width;
+    height: $width;
+}
+div{
+    background-color: gray;
+}
+.box1{
+    @include box-size;
+}
