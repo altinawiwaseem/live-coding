@@ -58,3 +58,19 @@ $box2-width: 3rem;
   opacity: 1;
   visibility: visible;
 }
+@keyframes fade-in{
+    0%{
+@include hide();
+width: 5rem;
+transform: rotate(0deg);
+    }
+    100%{
+@include revel();
+width: 3rem;
+transform: rotate(90deg);
+    }
+
+}
+@mixin fade-in ($time) {
+    animation: fade-in $time alternate infinite;
+}
