@@ -34,20 +34,7 @@ div {
   width: $width;
   height: $height;
 }
-.box2 {
-  background-color: pink;
-  @include box-size-with-random-val(51rem, 5rem);
-}
-$box2-width: 3rem;
-.box3 {
-  background-color: black;
-  // calling my mixins
-  @include box-size-with-random-val($box2-width, 2rem);
-}
-.box4 {
-  background-color: purple;
-  @include box-size-with-random-val(400px, 15rem);
-}
+
 // Hide element
 @mixin hide {
   opacity: 0;
@@ -58,6 +45,7 @@ $box2-width: 3rem;
   opacity: 1;
   visibility: visible;
 }
+<<<<<<< HEAD
 @keyframes fade-in{
     0%{
 @include hide();
@@ -74,3 +62,42 @@ transform: rotate(90deg);
 @mixin fade-in ($time) {
     animation: fade-in $time alternate infinite;
 }
+=======
+@mixin fade-in($time) {
+  animation-name: fade-in;
+  animation-duration: $time;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+// Animations with mixins
+.box {
+  background-color: purple;
+  @include fade-in(3s);
+}
+
+@keyframes fade-in {
+  0% {
+    @include hide();
+    @include box-size() // transform: rotate(0deg);
+;
+  }
+  100% {
+    @include revel();
+    @include box-size-with-random-val(3rem, 5rem) // transform: rotate(90deg);
+;
+  }
+}
+.box2 {
+  background-color: pink;
+  @include box-size-with-random-val(51rem, 5rem);
+  @include fade-in(5s);
+}
+$box2-width: 3rem;
+.box3 {
+  background-color: black;
+  // calling my mixins
+  @include box-size-with-random-val($box2-width, 2rem);
+  @include fade-in(10s);
+  height: 5rem;
+}
+>>>>>>> c7fab022e0235b3aa5f2c2012655da1f7049120e
