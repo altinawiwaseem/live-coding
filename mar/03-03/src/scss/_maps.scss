@@ -23,7 +23,7 @@ $map-font-sizes: (
     background-color: lightblue;
   } @else {
     //false
-    @error "#{$size} is not defined ";
+    @error "#{$size} is not defined. Please use #{map-keys($map-font-sizes)}";
   }
 }
 // this is the best ues for maps 😉 using  function
@@ -31,6 +31,6 @@ $map-font-sizes: (
   @if map-has-key($map-font-sizes, $size) {
     @return map-get($map-font-sizes, $size);
   } @else {
-    @error "#{$size} is not okay. ";
+    @error "#{$size} is not okay. Please use #{map-keys($map-font-sizes)} ";
   }
 }
