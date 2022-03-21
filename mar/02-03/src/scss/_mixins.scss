@@ -45,24 +45,6 @@ div {
   opacity: 1;
   visibility: visible;
 }
-<<<<<<< HEAD
-@keyframes fade-in{
-    0%{
-@include hide();
-width: 5rem;
-transform: rotate(0deg);
-    }
-    100%{
-@include revel();
-width: 3rem;
-transform: rotate(90deg);
-    }
-
-}
-@mixin fade-in ($time) {
-    animation: fade-in $time alternate infinite;
-}
-=======
 @mixin fade-in($time) {
   animation-name: fade-in;
   animation-duration: $time;
@@ -100,4 +82,3 @@ $box2-width: 3rem;
   @include fade-in(10s);
   height: 5rem;
 }
->>>>>>> c7fab022e0235b3aa5f2c2012655da1f7049120e
