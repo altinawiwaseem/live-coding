@@ -14,9 +14,10 @@
 
 Basic String Methods
 - `.toUpperCase()`, `.toLowerCase()`
-- `.substring()`
 - `.includes()`
 - `.trim()`
+- `.substring()`
+- `.slice()`
 
 ## Resources
 
