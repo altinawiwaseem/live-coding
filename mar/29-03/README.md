@@ -4,8 +4,7 @@
 - conditional statements
 - if...else statement
 - if...else if...else
-- introduction to scope
-- block scope
+
 
 ## Exercises
 
