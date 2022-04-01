@@ -2,6 +2,11 @@
  * 01 easy - Print the bigger number
  * Write a function that compares two integers and prints to the console the larger
  */
+function biggerNumber(){
+    console.log(Math.max(5,7,88,900))
+}
+biggerNumber()
+
 
 /**
  * 02 Easy - Print Even or Odd
@@ -9,7 +14,16 @@
  * For each iteration, it will check if the current number is odd or even, 
  * and display a message to the screen
  */
-
+function oddOrEven (){
+    for (let i = 0 ;i <= 15; i++){
+        if( i % 2 === 0){
+            console.log(i, "this number is even")
+        }else {
+            console.log(i, "this number is odd")
+        }
+    }
+}
+oddOrEven()
 /**
  * 03 Medium - Check Grades
  * Write a function that works with an array of marks of students and computes
