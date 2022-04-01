@@ -43,7 +43,10 @@ oddOrEven()
  * <100	A
  * Use a switch statement to solve this one
  */
+let classMarks = ["David 80"	,"Vinoth 77" , "Divya 88", "Ishitha 95", "Thomas	68"]
+function gradeAverage(){
 
+}
 /**
  * 04 Easy - medium - Sum multiples of 3 and 5
  * Write a function to sum the multiples of 3 and 5 under 1000.
