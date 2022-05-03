@@ -18,3 +18,7 @@ result:
 */
 
 // a function that calculates the total of more than 1 product, not necessarily all of them
+
+
+
+
