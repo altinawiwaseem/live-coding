@@ -6,6 +6,17 @@
  * the function should return an array without duplicates:
  * [1, 5, 6, 7, 8, 9]
  */
+let array = [1, 5, 6, 5, 7, 1, 6, 8, 9, 7]
+function remove(acc, cur){
+    let newArray = []
+    if (!acc.includes(cur) ){
+         acc.push(cur)
+    }
+return acc
+}
+
+let result = array.reduce(remove, [])
+console.log(result)
 
 /**
  * 02
