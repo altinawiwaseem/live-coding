@@ -50,20 +50,3 @@ let sortedNumbersReverse2 = numbers.sort((a, b) => b - a);
 console.log(sortedNumbersReverse2)
 
 
-let todos = [
-    {
-        todo: "clean the apartment",
-        priority: 5,
-        done: false
-    },
-    {
-        todo: "buy groceries",
-        priority: 3,
-        done: true 
-    },
-    {
-        todo: "study",
-        priority: 4,
-        done: false
-    },
-]
