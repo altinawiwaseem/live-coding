@@ -17,9 +17,49 @@
  * Bonus: Make the functions as arbitrary as cats are - 
  * sometimes make it so the cat doesn't want to be petted.
  */
+class Cat{
+    constructor(name, tiredness, hunger,lonliness,happiness){
+        this.tiredness = tiredness
+        this.hunger = hunger
+        this.lonliness = lonliness
+        this.happiness = happiness
+        this.name = name
+    }
+    incDec(food){
+        if (food < 50 && food > 20){
+            this.happiness -= 10
+            this.happiness += 10
+        } else if (food < 20 && food >= 0 ){
+            this.happiness = 0
+            this.hunger = 100
+        } else if (food > 50 && food < 80){
+            this.happiness += 20
+            this.hunger -= 20
+        } else if (food > 80 && food <= 100){
+            this.happiness = 100
+            this.hunger = 0
+        }
+         if (this.hunger < 0){
+             this.hunger = 0
+         }
+         if (this.hunger > 100){
+            this.hunger = 100
+        }
+        if (this.happiness < 0){
+            this.happiness = 0
+        }
+        if (this.happiness > 100){
+           this.happiness = 100
+       }
+    }
+   
+   
+}
 
-
-
+let cat = new Cat("caty", 20, 30, 40, 50)
+console.log(cat)
+cat.incDec(0)
+console.log(cat)
 /**
  * The Reading List
  * 
