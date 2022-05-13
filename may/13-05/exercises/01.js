@@ -52,14 +52,17 @@ class Cat{
            this.happiness = 100
        }
     }
-   
+   print(){
+       console.log(this.happiness > 50 && this.happiness < 80? `${this.name} is happy`: this.happiness > 80 ? `${this.name } is very happy`: this.happiness > 20 && this.happiness < 50 ? `${this.name} is not so happy` : `${this.name} is very sad`)
+   }
    
 }
 
 let cat = new Cat("caty", 20, 30, 40, 50)
 console.log(cat)
-cat.incDec(0)
+cat.incDec(90)
 console.log(cat)
+cat.print()
 /**
  * The Reading List
  * 
