@@ -54,8 +54,25 @@ console.log(capitalize(products))
 // Get an array containing only product types.
 // Example: ["T-shirt", "Socks", "Jeans", "T-shirt"]
 
+function onlyType(products){
+  let items =[]
+  for(let item of products){
+    items.push(item.type)
+  }
+  return items
+}
+console.log("onlyType",onlyType(products))
 // Add a new property to the products describing the product
 
+function description(products){
+
+let productDescription = products.map(n => n.description = `${n.type}, its color is : ${n.color} and cost: ${n.price}`)
+ products.productDescription
+ return products
+
+
+}
+console.log("description",description(products))
 /* Filter and find */
 // Get an array with only yellow products
 
