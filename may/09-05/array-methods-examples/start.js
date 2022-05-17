@@ -44,6 +44,12 @@ let products = [
 /* Map */
 
 // Capitalize the type of each product
+function capitalize (products){
+ let productsCapitalized = products.map((n)=> n.type[0].toUpperCase()+n.type.slice(1))
+
+return productsCapitalized
+}
+console.log(capitalize(products))
 
 // Get an array containing only product types.
 // Example: ["T-shirt", "Socks", "Jeans", "T-shirt"]
