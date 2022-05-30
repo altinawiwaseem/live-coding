@@ -18,6 +18,10 @@ return acc
 let result = array.reduce(remove, [])
 console.log(result)
 
+
+// task 2 
+console.log("\n 2 \n")
+
 /**
  * 02
  * Given the following arrays of products and carts,
@@ -127,6 +131,13 @@ const carts = [
         quantity: 3
     }
 ]
+
+
+
+
+
+
+
 
 /**
  * Given the following array of blog posts,

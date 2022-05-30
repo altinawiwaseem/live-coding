@@ -41,6 +41,8 @@ let products = [
   },
 ];
 
+
+
 /* Map */
 
 // Capitalize the type of each product
@@ -65,15 +67,13 @@ console.log("onlyType",onlyType(products))
 // Add a new property to the products describing the product
 
 function description(products){
-
-let productDescription = products.map(n => n.description = `${n.type}, its color is : ${n.color} and cost: ${n.price}`)
- products.productDescription
+products.map(n => n.description = `${n.type}, its color is : ${n.color} and cost: ${n.price}`)
  return products
-
-
 }
 console.log("description",description(products))
+
 /* Filter and find */
+
 // Get an array with only yellow products
 
 // Get an array with products that cost more than 15
