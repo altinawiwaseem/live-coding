@@ -27,6 +27,7 @@ const addToList = (e) => {
     let text = document.createTextNode(userData);
     // step 3
     newLi.appendChild(text);
+    newLi.style.backgroundColor = colorGen();
     ul.appendChild(newLi);
 
     document.querySelector("#user-data").value = "";
@@ -36,4 +37,12 @@ const addToList = (e) => {
   }
 };
 
+const colorGen = () => {
+  let result = "#";
+  let colorCode = "0123456789ABCDEF";
+  for (let i = 0; i < 6; i++) {
+    result += colorCode[Math.floor(Math.random() * 16)];
+  }
+  return result;
+};
 document.querySelector("form").addEventListener("submit", addToList);
