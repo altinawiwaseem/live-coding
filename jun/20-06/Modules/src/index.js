@@ -1,7 +1,7 @@
 // Start with libraries
-import { log } from "./table.js";
 
-import asdkn, { screws, x } from "./screws.js";
+import buildTable from "./table.js";
+import buildChair from "./chair.js";
 
 // IIFE = Immediately Invoked Function Expression
 (function () {
@@ -16,4 +16,5 @@ import asdkn, { screws, x } from "./screws.js";
   });
 })();
 
-log();
+console.log("table: ", buildTable());
+console.log("chair: ", buildChair());
