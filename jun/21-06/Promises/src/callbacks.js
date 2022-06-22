@@ -10,7 +10,7 @@
 //   document.body.style.backgroundColor = "orange";
 // }, 6000);
 
-// Callback hell
+// ! Callback hell
 // setTimeout(() => {
 //   document.body.style.backgroundColor = "red";
 //   setTimeout(() => {
@@ -21,7 +21,7 @@
 //   }, 2000);
 // }, 2000);
 
-// Writing the same with a promise
+// ! Writing the same with a promise
 function changeBackgroundColor(color, delay) {
   return new Promise((resolve) => {
     setTimeout(() => {

@@ -17,6 +17,9 @@
 const div = document.getElementById("root");
 const users = ["Matt", "John", "Maria"];
 
+// ! Racing condition - we want the getUsers function to be called
+// only after we have added a new user.
+// That is why we pass the getUsers function as a callback to the addUser function.
 function getUsers() {
   setTimeout(() => {
     users.forEach((user) => {
@@ -38,7 +41,7 @@ addUser("Steve", getUsers);
 
 const availableDrinks = ["Coffee", "Tea", "Water"];
 
-// Promise example
+// ! Promise example
 function orderDrink(drink) {
   return new Promise((resolve, reject) => {
     if (availableDrinks.includes(drink)) {
@@ -49,6 +52,7 @@ function orderDrink(drink) {
   });
 }
 
+// ! You can try changing the parameter that is passed to the orderDrink function
 orderDrink("Orange juice")
   .then((value) => console.log(value))
   .catch((err) => console.log(err));
