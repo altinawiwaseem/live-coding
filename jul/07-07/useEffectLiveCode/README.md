@@ -16,12 +16,12 @@ useEffect hook was introduced to replace some of the most used lifecycle methods
 
 <img src='./images/useEffect-cheatSheet.png' alt='useEffect'/>
 
-
-**Resources:** 
+**Resources:**
 
 - [Official react page](https://reactjs.org/docs/hooks-effect.html)
 - [useEffect / w3schools](https://www.w3schools.com/react/react_useeffect.asp)
 - [useEffect / blog](https://dmitripavlutin.com/react-useeffect-explanation/)
+- [useEffect cleanup example (loading page)](https://dev.to/otamnitram/react-useeffect-cleanup-how-and-when-to-use-it-2hbm)
 
 **Resources for ClassBasedComponent (CBC):**
 
@@ -29,4 +29,3 @@ useEffect hook was introduced to replace some of the most used lifecycle methods
 - [lifecycle / w3schools](https://www.w3schools.com/react/react_lifecycle.asp#:~:text=Each%20component%20in%20React%20has,Mounting%2C%20Updating%2C%20and%20Unmounting.)
 
 ---
-

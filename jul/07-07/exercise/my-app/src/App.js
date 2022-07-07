@@ -14,7 +14,7 @@ function App() {
 
       // newArr.push(randomNum);
 
-      //  new Set ([...newArr])
+      //  new Set (newArr)
     }
 
     const superNum = Math.floor(Math.random() * 10 + 1);
