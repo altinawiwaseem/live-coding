@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+# What we learned today
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. In React, we do not want our page to refresh whenever we go to a new link, that is why we cannot use
+   a regular `<a>` tag.
+2. In fact, we had to install a completely new library to use navigation in React.
+3. We installed a library called `react-router-dom`.
 
-## Available Scripts
+4. Once we have installed the library there was one thing we had to do be able to use it:
+   We had to go to [index.js](./src/index.js) and wrap the `<App>` component with a `<BrowserRouter>` component which we imported from the `react-router-dom`.
 
-In the project directory, you can run:
+5. We also learned that we cannot use the normal `<a>` tag because it refreshes our app, so we used the `<Link>` component from the `react-router-dom` library. Example in [Header](./src/components/Header/index.jsx)
 
-### `npm start`
+6. We started by using the `<Link>` component, but we then changed it to a `<NavLink>` component, which is basically the same, but it gives the component a className if the `<NavLink>` is currently active.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+7. Cool, so now that we were able to use links to change the URL, we now need to add some routes so that we can choose which component should be rendered depending on the URL.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+8. In [App](./src/App.js), we added a `<Routes>` component inside which we added `<Route>` components.
 
-### `npm test`
+9. Every `<Route>` component accepted two props: the `path` prop, and the `element` prop.
+   The path prop means on which URL the component should be rendered, the element prop means which component should be rendered.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+10. We then learned that we can nest routes. The example in [App](./src/App.js), shows that a `<Route>` component can have other `<Route>` components as children. To be able to render the child components inside our parent component, we need to add an `<Outlet>` component to the [parent](./src/pages/Posts/index.jsx). Now, the child route component will be rendered inside the parent.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+11. Alternative way of nesting components is shown inside the [PostRouter](./src//components//PostsRouter/index.jsx). We were able to nest that router component inside our [App](./src/App.js) by adding an asterisk to the path - `<Route path="/posts/*" element={<PostsRouter />} /> *`. If we choose this way of nesting routes, we are not adding any additional functionality, we do not render elements inside an `<Outlet>` component. We are just reorganizing our code into smaller chunks so it becomes more maintainable.
