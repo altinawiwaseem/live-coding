@@ -19,13 +19,12 @@ function App() {
       >
         <NavLink to="/"> Home </NavLink>
         <NavLink to="/all-users"> Users </NavLink>
-        <NavLink to="/single-user"> User </NavLink>
       </div>
 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/all-users" element={<Users />} />
-        <Route path="/single-user" element={<SingleUser />} />
+        <Route path="/single-user/:id" element={<SingleUser />} />
       </Routes>
     </div>
   );

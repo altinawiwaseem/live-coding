@@ -1,10 +1,13 @@
-import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
+import React, { useEffect, useState} from "react";
+import { useParams } from "react-router-dom";
 
 export default function SingleUser() {
   const [user, setUser] = useState(null);
-  const id = 5;
+  
+
+const { id } = useParams();
+console.log(id)
+
 
   const fetchUser = (userId) => {
     fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
