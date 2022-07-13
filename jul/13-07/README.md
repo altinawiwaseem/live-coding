@@ -76,7 +76,8 @@ you can add this 'state' property to Link, NavLink, Navigate or useNavigate like
 for useNavigate it's a bit different like:
 
 ```js
- <button onClick={()=> useNavigate('/user', {state: {data: 'a lot' }})} > User </button>
+const navigate = useNavigate();
+ <button onClick={()=> navigate('/user', {state: {data: 'a lot' }})} > User </button>
 
 ```
 

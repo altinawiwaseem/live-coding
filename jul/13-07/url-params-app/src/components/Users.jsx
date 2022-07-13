@@ -1,12 +1,12 @@
-import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { 
+   // useNavigate,
+    Link } from "react-router-dom";
 
 export default function Users() {
   const [users, setUsers] = useState([]);
 
-  const navigate = useNavigate();
+ // const navigate = useNavigate();
 
   const fetchUsers = () => {
     fetch("https://jsonplaceholder.typicode.com/users")
@@ -21,7 +21,10 @@ export default function Users() {
   return (
     <div>
       {users.map((item) => (
-        <div onClick={() => navigate(`/single-user/${item.id}`)} key={item.id}>
+        <Link key={item.id} to={`/single-user/${item.id}`} >
+        <div 
+        // onClick={() => navigate(`/single-user/${item.id}`)}
+         >
           <h3>id: {item.id} </h3>
           <h3> username: </h3>
           {item.username}
@@ -29,6 +32,7 @@ export default function Users() {
           {item.company.name}
           <hr />
         </div>
+        </Link>
       ))}
     </div>
   );

@@ -4,9 +4,12 @@ import { useParams } from "react-router-dom";
 export default function SingleUser() {
   const [user, setUser] = useState(null);
   
-
-const { id } = useParams();
+// const id = 5;
+const { id } = useParams(); // e.g. { id : 2 }
 console.log(id)
+
+// const paramsObj = useParams();
+// const id = paramsObj.id
 
 
   const fetchUser = (userId) => {
