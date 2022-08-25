@@ -1,6 +1,6 @@
 import axios from "axios";
 
-// testing our endpoint that we made in server2.js
+// testing our endpoints that we made in server2.js
 const getFromMyServer1= async ()=>{
     const res = await axios.get("http://localhost:8000/")
   
@@ -17,3 +17,5 @@ const getFromMyServer1= async ()=>{
   
   getFromMyServer1();
   getFromMyServer2();
+
+  
