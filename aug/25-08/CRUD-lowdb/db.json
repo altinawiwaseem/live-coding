@@ -17,7 +17,14 @@
       "name": "Clementine Bauch",
       "username": "Samantha",
       "email": "Nathan@yesenia.net"
+    },
+    {
+      "name": "John",
+      "username": "Doe",
+      "email": "john@doe",
+      "id": 4
     }
+   
   ],
   "products": [
     {
