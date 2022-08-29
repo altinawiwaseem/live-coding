@@ -1,0 +1,43 @@
+{
+  "users": [
+    {
+      "id": "2",
+      "name": "Ervin Howell",
+      "username": "Antonette",
+      "email": "Shanna@melissa.tv"
+    },
+    {
+      "id": "3",
+      "name": "Clementine Bauch",
+      "username": "Samantha",
+      "email": "Nathan@yesenia.net"
+    },
+    {
+      "username": "I know",
+      "email": "blahblah@blah",
+      "id": "86e5gf289d"
+    }
+  ],
+  "products": [
+    {
+      "productName": "playstation",
+      "price": 9999,
+      "id": "86e5cabhe3"
+    },
+    {
+      "productName": "monitor",
+      "price": 1000,
+      "id": "86e5d02408"
+    },
+    {
+      "productName": "TV",
+      "price": 444,
+      "id": "86e625507e"
+    },
+    {
+      "productName": "iPad",
+      "price": "1000",
+      "id": "6"
+    }
+  ]
+}

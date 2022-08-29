@@ -10,7 +10,7 @@ const getUsers = async () => {
 
 
 const addUser = async () => {
-  const res = await axios.post("http://localhost:8080/signup", {
+  const res = await axios.post("http://localhost:8080/users/signup", {
     name: "John",
     username: "Doe",
     email: "john@doe"

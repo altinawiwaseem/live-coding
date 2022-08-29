@@ -33,8 +33,8 @@ app.get("/products", (req, res) => {
   res.send(db.data.products);
 });
 
-// endpoint 3: expects a POST request to the path localhost:8080/signup with a body that contains the data of the new user, adds it to the database (db.json) and then sends a response "user added successfully" to the client.
-app.post("/signup", async (req, res) => {
+// endpoint 3: expects a POST request to the path localhost:8080/users/signup with a body that contains the data of the new user, adds it to the database (db.json) and then sends a response "user added successfully" to the client.
+app.post("/users/signup", async (req, res) => {
   //Create
   console.log(req.body);
 
@@ -54,3 +54,4 @@ app.post("/signup", async (req, res) => {
 
   res.send("user added successfully");
 });
+
