@@ -1,0 +1,51 @@
+{
+  "films": [
+    {
+      "id": 1,
+      "title": "Alien",
+      "director": "Ridley Scott"
+    },
+    {
+      "id": 2,
+      "title": "Ran",
+      "director": "Akira Kurosawa"
+    },
+    {
+      "id": 4,
+      "title": "Bacurau",
+      "director": "Kleber Mendonça Filho"
+    },
+    {
+      "id": 5,
+      "title": "Chunking Express",
+      "director": "Wong Kar-Wai"
+    },
+    {
+      "id": 6,
+      "title": "The Seventh Seal",
+      "director": "Ingmar Bergman"
+    }
+  ],
+  "music": [
+    {
+      "id": 7,
+      "artist": "Gill Scott Heron",
+      "album": "Bridges"
+    },
+    {
+      "id": 7,
+      "artist": "PJ Harvey",
+      "album": "Rid Of Me"
+    },
+    {
+      "id": 8,
+      "artist": "Princess Nokia",
+      "album": "A Girl Cried Red"
+    },
+    {
+      "id": 9,
+      "artist": "King Krule",
+      "album": "The OOZ"
+    }
+  ]
+}
