@@ -7,14 +7,22 @@ export default function Signup() {
   const [checkPassword, setCheckPassword] = useState(false);
 
   const handleChange = (e) => {
-    console.log(e.target);
     setUser((prev) => ({ ...prev, [e.target.placeholder]: e.target.value }));
   };
 
+// const fetchWithAxios=async ()=>{
+//   const res = await axios("http://localhost:5000/api/signup", user);
+//   const data=res.data;
+//   console.log(data)
+//   return data;
+// }
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     if (checkPassword) {
+      // fetchWithAxios();
+
       fetch("http://localhost:5000/api/signup", {
         method: "POST",
         body: JSON.stringify(user),
@@ -24,9 +32,8 @@ export default function Signup() {
       })
         .then((res) => res.json())
         .then((data) => console.log(data));
-      // {user: userObj, msg: "user added to db", success: true}
+      //data: {user: userObj, msg: "user added to db", success: true}
 
-      //const data = await axios("http://localhost:5000/api/signup", user)
     }
   };
 

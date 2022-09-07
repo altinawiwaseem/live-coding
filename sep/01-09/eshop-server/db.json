@@ -5,6 +5,12 @@
       "email": "John@Doe",
       "password": "12345678",
       "id": "86eda3b83d"
+    },
+    {
+      "username": "dfdg",
+      "email": "dgdfg@fsdf",
+      "password": "123",
+      "id": "86edg68120"
     }
   ]
 }
