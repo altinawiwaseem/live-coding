@@ -10,8 +10,17 @@ require('dotenv').config()
 const connectDb = require('./config/db')
 connectDb()
 
+
+app.use(express.json())
+
 // app.use(path, cb)
-app.use(() => console.log('hello'))
+// app.use((req, res) => {
+
+//     console.log('hello')
+//     res.send('hi')
+// })
+
+app.use('/posts', require('./routes/postsRoutes'))
 
 const port = process.env.PORT || 8000
 
