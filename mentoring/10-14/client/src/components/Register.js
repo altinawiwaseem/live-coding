@@ -4,9 +4,10 @@ import axios from 'axios'
 function Register() {
 
     const [data, setData] = useState({
-        name: '',
+        userName: '',
         email: '',
-        pass: ''
+        pass: '',
+        name: ''
     })
 
     const handleSave = async () => {
@@ -46,7 +47,8 @@ function Register() {
             gap-[20px]
         ">
 
-        <input placeholder="type your username" value={data.name} onChange={e => setData({...data, name: e.target.value})}/>
+        <input placeholder="type your username" value={data.userName} onChange={e => setData({...data, userName: e.target.value})}/>
+        <input placeholder="type your name" value={data.name} onChange={e => setData({...data, name: e.target.value})}/>
         <input placeholder="type your email" value={data.email} onChange={e => setData({...data, email: e.target.value})}/>
         <input placeholder="type your pass" value={data.pass} onChange={e => setData({...data, pass: e.target.value})}/>
 
